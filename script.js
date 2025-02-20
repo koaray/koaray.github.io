@@ -10,12 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
   }
   
-  // Easter Egg: Reveal 'secret-section' when clicking the tiny link in footer
+  // Easter Egg: Display 'secret-section' when secret link is clicked
   document.addEventListener("click", (e) => {
     if (e.target.matches(".secret-link")) {
       e.preventDefault();
-      document.getElementById("secret").style.display = "block";
-      document.getElementById("secret").scrollIntoView({ behavior: "smooth" });
+      const secretSection = document.getElementById("secret");
+      // Toggle 'hidden' class
+      secretSection.classList.toggle("hidden");
+      secretSection.scrollIntoView({ behavior: "smooth" });
     }
   });
   
@@ -49,7 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
   function activateKonamiEasterEgg() {
     alert("You discovered the hidden Konami Code! Let’s build something extraordinary together.");
-    // Optionally change the website background or reveal something extra
-    document.body.style.backgroundColor = "#e6ffe6";
+    // Reveal the secret section if hidden
+    const secretSection = document.getElementById("secret");
+    if (secretSection.classList.contains("hidden")) {
+      secretSection.classList.remove("hidden");
+      secretSection.scrollIntoView({ behavior: "smooth" });
+    }
+    // Optionally, add more style changes
+    document.body.classList.add("bg-green-50");
   }
   
