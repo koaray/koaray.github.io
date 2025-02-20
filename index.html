@@ -1,1 +1,154 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Personal website of Ryan, an intrapreneur and venture builder inside a non-profit." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan – Intrapreneur & Venture Builder</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="logo">
+      <!-- Could be a text-based logo or an image -->
+      <h1>Ryan</h1>
+      <p>Intrapreneur & Venture Builder</p>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Building Impactful Ventures Within a Non-Profit World</h2>
+    <p>
+      Forward-thinking solutions, strategic leadership, and a genuine passion 
+      for making a difference. Explore my journey below.
+    </p>
+    <button class="cta-button" onclick="scrollToSection('contact')">Let's Connect</button>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>
+      I'm Ryan, an <span class="highlight">intrapreneur</span> and 
+      <em>venture builder</em> within the non-profit space. I thrive at the 
+      intersection of innovation, strategic thinking, and practical execution.
+      Over my career, I've helped launch programs that drive growth and 
+      philanthropic impact. 
+    </p>
+    <p>
+      When I'm not guiding projects and teams, you'll find me experimenting 
+      with new ideas, reading up on the latest tech, and occasionally tinkering 
+      with code to bring fresh concepts to life.
+    </p>
+    <!-- Hovering Over "intrapreneur" triggers an Easter Egg tooltip in CSS -->
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="experience-section">
+    <h2>Experience</h2>
+    <div class="experience-cards">
+      <div class="card">
+        <h3>Non-Profit Venture Lab</h3>
+        <p>
+          Building from the ground up: Conceptualized, launched, and scaled 
+          multiple mission-focused initiatives. Oversaw cross-functional teams 
+          and managed multi-million dollar budgets to achieve sustainable growth.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Startup Collaborations</h3>
+        <p>
+          Worked with diverse startups to refine business models, validate 
+          hypotheses, and create strategic partnerships that accelerate 
+          go-to-market timelines.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Innovation Advisor</h3>
+        <p>
+          Advised emerging intrapreneurship programs, guiding them through 
+          product development stages, fostering a culture of creativity, 
+          and aligning initiatives with organizational goals.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects-section">
+    <h2>Highlighted Projects</h2>
+    <div class="projects-grid">
+      <div class="project-item">
+        <h3>Project A</h3>
+        <p>
+          A philanthropic funding platform that streamlines donor engagement 
+          and impact tracking, harnessing data insights to improve transparency 
+          and trust.
+        </p>
+      </div>
+      <div class="project-item">
+        <h3>Project B</h3>
+        <p>
+          A volunteer matching tool leveraging AI to pair skill sets with 
+          high-impact opportunities, enabling more efficient allocation of 
+          volunteer hours.
+        </p>
+      </div>
+      <div class="project-item">
+        <h3>Project C</h3>
+        <p>
+          Built an internal accelerator program focusing on research and 
+          iterative design. Resulted in two spin-off ventures addressing 
+          critical community needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <p>
+      Interested in collaborating or learning more about my work? Let's chat!
+    </p>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>&copy; <span id="year"></span> Ryan. Built with passion.</p>
+    <a href="#secret" class="secret-link">.</a>
+  </footer>
+
+  <!-- SECRET SECTION (Hidden by default) -->
+  <section id="secret" class="secret-section">
+    <h2>You Found the Hidden Section!</h2>
+    <p>
+      This is a little nod to your curiosity—just like I always seek out 
+      hidden opportunities and solutions within organizations. 
+    </p>
+  </section>
+</body>
+</html>
