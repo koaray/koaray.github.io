@@ -242,49 +242,44 @@
       <p class="section-paragraph">
         Interested in collaborating, or have a project in mind? Let’s connect!
       </p>
-      <form class="contact-form">
+      <!-- Formspree form starts here -->
+      <form
+        action="https://formspree.io/f/xvgzlnrk"
+        method="POST"
+        class="contact-form"
+      >
         <div class="form-group">
-          <label for="name" class="form-label">Name</label>
+          <label for="email" class="form-label">Your Email</label>
           <input 
-            type="text"
-            id="name"
-            name="name"
-            required
-            class="form-input"
-          />
-        </div>
-        <div class="form-group">
-          <label for="email" class="form-label">Email</label>
-          <input 
-            type="email" 
-            id="email"
+            type="email"
             name="email"
+            id="email"
             required
             class="form-input"
           />
         </div>
+  
         <div class="form-group">
-          <label for="message" class="form-label">Message</label>
+          <label for="message" class="form-label">Your Message</label>
           <textarea
-            id="message"
             name="message"
+            id="message"
             rows="5"
             required
             class="form-input"
           ></textarea>
         </div>
-        <button 
-          type="submit"
-          class="form-button"
-        >
-          Send
-        </button>
+  
+        <!-- Add more fields here if needed -->
+        
+        <button type="submit" class="form-button">Send</button>
       </form>
       <p class="section-paragraph" style="margin-top:1rem;font-size:0.875rem;">
         <strong>Education:</strong> University of Pennsylvania – BSc in Materials Science & Engineering (2003–2008)
       </p>
     </div>
   </section>
+  
 
   <!-- FOOTER -->
   <footer class="main-footer">
