@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Native JS Drag-and-Drop Grid Demo</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Left bucket panel -->
+  <div class="bucket">
+    <h2>Bucket</h2>
+    <ul class="items-list" id="bucketList">
+      <!-- Example items -->
+      <li draggable="true" data-id="item1">Item 1</li>
+      <li draggable="true" data-id="item2">Item 2</li>
+      <li draggable="true" data-id="item3">Item 3</li>
+      <li draggable="true" data-id="item4">Item 4</li>
+      <li draggable="true" data-id="item5">Item 5</li>
+      <li draggable="true" data-id="item6">Item 6</li>
+    </ul>
+  </div>
+
+  <!-- Grid panel -->
+  <div class="grid-container">
+    <h2>Scheduling Grid</h2>
+    <p>Courts are columns (1,2,3), Times are rows (A,B,C). Shift+click for multi-select.</p>
+    <div class="grid" id="grid">
+      <!-- Row A -->
+      <div class="cell" data-court="1" data-time="A">Court1-A</div>
+      <div class="cell" data-court="2" data-time="A">Court2-A</div>
+      <div class="cell" data-court="3" data-time="A">Court3-A</div>
+      <!-- Row B -->
+      <div class="cell" data-court="1" data-time="B">Court1-B</div>
+      <div class="cell" data-court="2" data-time="B">Court2-B</div>
+      <div class="cell" data-court="3" data-time="B">Court3-B</div>
+      <!-- Row C -->
+      <div class="cell" data-court="1" data-time="C">Court1-C</div>
+      <div class="cell" data-court="2" data-time="C">Court2-C</div>
+      <div class="cell" data-court="3" data-time="C">Court3-C</div>
+    </div>
+
+    <!-- Button to log final item->cell assignments -->
+    <button onclick="printAssignments()">Print Assignments</button>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

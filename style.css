@@ -352,3 +352,43 @@
     margin-top: 0.25rem;
   }
   
+  /* New 'Stuff I'm Playing Around With' Section */
+.dev-projects-section {
+    background-color: #f3ede7; /* or whatever fits your site’s color scheme */
+  }
+  
+  .dev-projects-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .dev-project-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .dev-project-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1e1b16; /* match or complement your palette */
+  }
+  
+  .dev-project-text {
+    color: #5a534a;
+  }
+  
+  .demo-link {
+    color: #c86428; /* rust orange accent */
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .demo-link:hover {
+    color: #a84d13; /* darker rust on hover */
+  }
+  
