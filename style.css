@@ -2,223 +2,353 @@
 /* RESET & BODY STYLES         */
 /* ---------------------------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.body-bg {
-  background-color: #f9fafb; /* Light gray background */
-  color: #1f2937; /* Tailwind-like gray-800 */
-}
-
-/* ---------------------------- */
-/* HEADER                       */
-/* ---------------------------- */
-.main-header {
-  background-color: #111827;  /* deep grey (Tailwind-ish) */
-  color: #fff; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
-.header-left {
-  display: flex;
-  flex-direction: column;
-}
-
-.header-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 0.25rem;
-}
-
-.header-subtitle {
-  font-size: 0.875rem;
-  color: #9ca3af; /* gray-400 */
-}
-
-.nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-menu a {
-  color: #9ca3af; 
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-  font-size: 0.875rem;
-}
-
-.nav-menu a:hover {
-  color: #ffffff;
-}
-
-/* ---------------------------- */
-/* HERO                         */
-/* ---------------------------- */
-.hero-section {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(to right, #e5e7eb, #f3f4f6); 
-}
-
-.hero-content {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.hero-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  color: #1f2937;
-}
-
-.hero-text {
-  font-size: 1.125rem;
-  color: #4b5563;
-  margin-bottom: 2rem;
-}
-
-.hero-button {
-  background-color: #111827;
-  color: #fff;
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.hero-button:hover {
-  background-color: #374151;
-}
-
-/* ---------------------------- */
-/* SECTIONS                     */
-/* ---------------------------- */
-.section {
-  padding: 3rem 2rem;
-}
-
-.section-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: #1f2937;
-}
-
-.section-paragraph {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #4b5563;
-}
-
-/* ABOUT */
-.about-section p {
-  margin-bottom: 1rem;
-  color: #4b5563;
-}
-
-/* EXPERIENCE */
-.experience-section {
-  background-color: #f3f4f6;
-}
-
-.experience-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 0.25rem;
-  padding: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.card-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #1f2937;
-}
-
-.card-subtitle {
-  font-size: 0.875rem;
-  color: #6b7280;
-  margin-bottom: 1rem;
-}
-
-.card-list {
-  list-style: disc inside;
-  color: #4b5563;
-}
-.card-list li {
-  margin-bottom: 0.5rem;
-}
-
-/* PROJECTS */
-.projects-section .projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.project-card {
-  background-color: #fff;
-  border-radius: 0.25rem;
-  padding: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.project-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #1f2937;
-}
-
-.project-text {
-  color: #4b5563;
-  margin-bottom: 1rem;
-}
-
-.project-list {
-  list-style: disc inside;
-  color: #4b5563;
-}
-.project-list li {
-  margin-bottom: 0.5rem;
-}
-
-/* CONTACT */
-.contact-section {
-  background-color: #f3f4f6;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Earthy background, refined text color */
+  html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .body-bg {
+    background-color: #f9f5f0; /* Light cream / Earth tone */
+    color: #3a352f; /* Dark warm gray */
+  }
+  
+  /* ---------------------------- */
+  /* HEADER: Dark Brown + Orange */
+  /* ---------------------------- */
+  .main-header {
+    background-color: #1e1b16; /* Very dark brown */
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .header-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  .header-subtitle {
+    font-size: 0.875rem;
+    color: #d2d0cd; 
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-menu a {
+    color: #c3bfb7; 
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 0.875rem;
+  }
+  
+  .nav-menu a:hover {
+    color: #ff914d; /* Rust orange on hover */
+  }
+  
+  /* ---------------------------- */
+  /* HERO: Subtle gradient        */
+  /* ---------------------------- */
+  .hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #ede9e2, #f9f5f0); 
+  }
+  
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #3a352f;
+  }
+  
+  .hero-text {
+    font-size: 1.125rem;
+    color: #5a534a;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    background-color: #c86428; /* Rust orange */
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .hero-button:hover {
+    background-color: #a84d13; /* Darker rust on hover */
+  }
+  
+  /* ---------------------------- */
+  /* SECTIONS                     */
+  /* ---------------------------- */
+  .section {
+    padding: 3rem 2rem;
+  }
+  
+  .section-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #3a352f;
+  }
+  
+  .section-paragraph {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #5a534a;
+  }
+  
+  /* ABOUT */
+  .about-section p {
+    margin-bottom: 1rem;
+    color: #5a534a;
+  }
+  
+  /* EXPERIENCE */
+  .experience-section {
+    background-color: #f3ede7;
+  }
+  
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1e1b16;
+  }
+  
+  .card-subtitle {
+    font-size: 0.875rem;
+    color: #6b635e;
+    margin-bottom: 1rem;
+  }
+  
+  .card-list {
+    list-style: disc inside;
+    color: #5a534a;
+  }
+  .card-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* PROJECTS */
+  .projects-section {
+    background-color: #fbfaf9;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .project-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1e1b16;
+  }
+  
+  .project-text {
+    color: #5a534a;
+    margin-bottom: 1rem;
+  }
+  
+  .project-list {
+    list-style: disc inside;
+    color: #5a534a;
+  }
+  .project-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* CONTACT */
+  .contact-section {
+    background-color: #f3ede7;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: #3a352f;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: #3a352f;
+  }
+  
+  .form-input:focus {
+    outline: 2px solid #c86428;
+    border-color: #c86428;
+  }
+  
+  .form-button {
+    background-color: #c86428;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  .form-button:hover {
+    background-color: #a84d13;
+  }
+  
+  /* ---------------------------- */
+  /* FOOTER                       */
+  /* ---------------------------- */
+  .main-footer {
+    background-color: #1e1b16;
+    color: #cbc7c2;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .main-footer p {
+    margin-bottom: 0;
+  }
+  
+  .secret-link {
+    text-decoration: none;
+    color: #1e1b16; /* hidden on background */
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+    font-size: 0.125rem;
+  }
+  
+  /* ---------------------------- */
+  /* SECRET SECTION               */
+  /* ---------------------------- */
+  .secret-section {
+    display: none; /* Hidden by default - toggled via JS */
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .secret-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #3a352f;
+  }
+  
+  .secret-text {
+    color: #5a534a;
+  }
+  
+  /* ---------------------------- */
+  /* MEDIA QUERIES                */
+  /* ---------------------------- */
+  @media (min-width: 768px) {
+    .experience-grid {
+      grid-template-columns: 1fr 1fr; /* 2 columns on md+ */
+    }
+    .projects-grid {
+      grid-template-columns: 1fr 1fr 1fr; /* 3 columns on md+ */
+    }
+  }
+  
+  /* ---------------------------- */
+  /* HIGHLIGHT TOOLTIP            */
+  /* ---------------------------- */
+  .highlight {
+    position: relative;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #c86428; /* rust orange for emphasis */
+  }
+  .highlight:hover::after {
+    content: "I love discovering new ways to innovate!";
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    background: #f0f0f0;
+    color: #333;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    transform: translateY(100%);
+    margin-top: 0.25rem;
+  }
   
